@@ -32,7 +32,7 @@ nav{
    left:2%;
    opacity:0.7;
 }
-#menu_icon svg:hover{
+#menu_icon svg:hover, #exit_menu svg:hover{
     width: 60px;
     height: 60px;
 }
@@ -40,7 +40,39 @@ nav{
     top:22%;
     opacity:1.0;
 }
+/* Top Menu */
+#side_menu{
+    position:fixed;
+    top:0;
+    margin:0;
+    padding:0;
+    border-right:5px solid rgba(216, 115, 56, 0.800);
+    color:black;
+    
+    height:100%;
+    width:0%;
+    overflow:hidden;
+    z-index: 2;
+}
+#side_menu #inside_menu{
+    background:rgba(216, 115, 56, 0.600);
+    list-style: none;  
+    font-size: 2em;
+    text-transform: uppercase;
+    height:100%;
+    margin:0;
+    padding: 20px 0px 0px 15px;
+    
+}
+#side_menu #inside_menu li{
+    padding-bottom: 20px;
 
+}
+#side_menu #inside_menu #exit_menu{
+    padding-left: 10px;
+
+}
+/* Side Menu*/
 
 nav h1{
     font-size: 2em;
@@ -51,8 +83,10 @@ button.pedido{
     text-align: center;
     padding: 10px 7px 10px 7px;
     border: 3px solid white;
-    background:none;   
+    background:none;
+     
 }
+
 nav button.pedido{
     position:absolute;
     right:5%;
@@ -62,8 +96,6 @@ nav button.pedido{
 }
 /*nav*/
 .slide{
-    background: url(/images/pizza.jpg) no-repeat center;
-    background-size:100% 100%;
     position: absolute;
     top: 0;
     left: 0;
