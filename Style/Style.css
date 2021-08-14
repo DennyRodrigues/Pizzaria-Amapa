@@ -48,9 +48,9 @@ nav{
     padding:0;
     border-right:5px solid rgba(216, 115, 56, 0.800);
     color:black;
-    
     height:100%;
-    width:0%;
+    width:40%;
+    display:none;
     overflow:hidden;
     z-index: 2;
     transition:step-start;
@@ -168,5 +168,8 @@ footer{
     }
     nav h1{
         font-size:1.3em;
+    }
+    #side_menu {
+        width:100%;
     }
 }
