@@ -92,7 +92,6 @@ nav button.pedido{
     position:absolute;
     right:5%;
     top: 25%;
-
     
 }
 /*nav*/
@@ -167,9 +166,14 @@ footer{
         display:none;
     }
     nav h1{
-        font-size:1.3em;
+        font-size:1.4em;
     }
     #side_menu {
         width:100%;
     }
+    .slide{
+        height:70%;
+        transition: none;
+    }
+    
 }
