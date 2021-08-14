@@ -8,7 +8,7 @@ const exit_menu = document.querySelector('#exit_menu');
 //function to open menu
 const open_menu = () =>{
     console.log('CLICK');
-    side_menu.style.width ='30%';
+    side_menu.style.width ='50%';
     menu_icon.style.display= 'none';
 
 }
