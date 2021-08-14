@@ -140,11 +140,11 @@ nav button.pedido{
 #buttons button{
     position:absolute;
     top:0%;
-    font-size: 2em;
     background:white;
     width:100px;
     height:100%;
     opacity:5%;
+    overflow: hidden;
 }
 #buttons #next{
     right:0px;
@@ -171,8 +171,10 @@ footer{
     #side_menu {
         width:100%;
     }
-    .slide{
+    header{
         height:70%;
+    }
+    .slide{
         transition: none;
     }
     .slide h1{
