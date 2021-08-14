@@ -1,3 +1,29 @@
+
+//HAMBURGER MENU
+const side_menu = document.querySelector('#side_menu');
+const menu_icon = document.querySelector('#menu_icon');
+const exit_menu = document.querySelector('#exit_menu');
+
+
+//function to open menu
+const open_menu = () =>{
+    console.log('CLICK');
+    side_menu.style.width ='30%';
+    menu_icon.style.display= 'none';
+
+}
+//function to close
+const close_menu = () =>{
+    side_menu.style.width ='0px';
+    menu_icon.style.display= 'inline';
+}
+
+//Add the click event to call the functions close and open
+menu_icon.addEventListener('click', open_menu);
+exit_menu.addEventListener('click', close_menu);
+
+
+//IMAGE SLIDER
 const next = document.querySelector('#next');
 const slides = document.querySelectorAll('.slide');
 const prev = document.querySelector('#prev');
@@ -27,3 +53,4 @@ const prev_slide = () =>{
 next.addEventListener('click', next_slide);
 prev.addEventListener('click', prev_slide);
 timer = setInterval(next_slide, 7000);
+
