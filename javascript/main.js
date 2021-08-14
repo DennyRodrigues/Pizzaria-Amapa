@@ -8,13 +8,13 @@ const exit_menu = document.querySelector('#exit_menu');
 //function to open menu
 const open_menu = () =>{
     console.log('CLICK');
-    side_menu.style.width ='50%';
-    menu_icon.style.display= 'none';
+    side_menu.style.display = 'block';
+    menu_icon.style.display = 'none';
 
 }
 //function to close
 const close_menu = () =>{
-    side_menu.style.width ='0px';
+    side_menu.style.display = 'none';
     menu_icon.style.display= 'inline';
 }
 
