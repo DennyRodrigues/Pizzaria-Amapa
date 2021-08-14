@@ -175,5 +175,7 @@ footer{
         height:70%;
         transition: none;
     }
-    
+    .slide h1{
+        font-size: 1em;
+    }
 }
