@@ -12,6 +12,10 @@ body{
 #space{
     padding-top: 1000px;
 }
+a{
+    text-decoration: none;
+    color:white;
+}
 /*Global*/
 nav{
     width:100%;
@@ -20,49 +24,79 @@ nav{
     border:0;
     background-color: rgba(216, 115, 56, 0.600);
     z-index: 1;
+    text-align: center;
 }
+#menu_icon{
+   position:absolute;
+   top:25%;
+   left:2%;
+   opacity:0.7;
+}
+#menu_icon svg:hover, #exit_menu svg:hover{
+    width: 60px;
+    height: 60px;
+}
+#menu_icon:hover{
+    top:22%;
+    opacity:1.0;
+}
+/* Top Menu */
+#side_menu{
+    position:fixed;
+    top:0;
+    margin:0;
+    padding:0;
+    border-right:5px solid rgba(216, 115, 56, 0.800);
+    color:black;
+    height:100%;
+    width:40%;
+    display:none;
+    overflow:hidden;
+    z-index: 2;
+    transition:step-start;
+}
+#side_menu #inside_menu{
+    background:rgba(216, 115, 56, 0.600);
+    list-style: none;  
+    font-size: 2em;
+    text-transform: uppercase;
+    height:100%;
+    margin:0;
+    padding: 20px 0px 0px 15px;
+    
+}
+#side_menu #inside_menu li{
+    padding-bottom: 20px;
+
+}
+#side_menu #inside_menu #exit_menu{
+    padding-left: 10px;
+}
+
+/* Side Menu*/
 
 nav h1{
-    padding-left: 20px;
-    float:left;
-    margin-left:20%;
     font-size: 2em;
 }
-nav ul{
-    float:right;
-    margin-top: 35px;
-  
-}
-nav li{
-    display:inline;
-    list-style:none;
-    padding-right:20px; 
-}
-nav a{
-    color:white;
-    text-decoration:none;
-    text-transform:uppercase;
-    opacity: 100%  
-}
-nav a:after{
-    color:black;
 
-}
-nav .pedido{
+button.pedido{
+    font-size: 1.4em;
     text-align: center;
     padding: 10px 7px 10px 7px;
     border: 3px solid white;
-    margin-right:20px;
-    font-size: 1.2em;
+    background:none;
+     
 }
-nav #menu{
-    float:left;
+
+nav button.pedido{
+    position:absolute;
+    right:5%;
+    top: 25%;
+
     
 }
 /*nav*/
 .slide{
-    background: url(/images/pizza.jpg) no-repeat center;
-    background-size:100% 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -125,4 +159,17 @@ footer{
     color:white;
     padding:10px;
     
+}
+/*Footer*/
+
+@media (max-width:720px){
+    nav button.pedido{
+        display:none;
+    }
+    nav h1{
+        font-size:1.3em;
+    }
+    #side_menu {
+        width:100%;
+    }
 }
