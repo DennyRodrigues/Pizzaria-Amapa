@@ -22,6 +22,21 @@ const close_menu = () =>{
 menu_icon.addEventListener('click', open_menu);
 exit_menu.addEventListener('click', close_menu);
 
+//FOOD_MENU
+//define the const Food_Menu
+const food_menu_buttom =  document.querySelector("#cardapio");
+const food_menu =  document.querySelector("#food_menu");
+
+//Define the Functions
+const show_food_menu = () => {
+    food_menu.style.display = 'block';
+}
+const close_food_menu = () => {
+    food_menu.style.display = 'none';
+}
+//Add the click event to call the functions close and show
+food_menu_buttom.addEventListener('click', show_food_menu);
+food_menu.addEventListener('click', close_food_menu);
 
 //IMAGE SLIDER
 const next = document.querySelector('#next');
