@@ -103,6 +103,7 @@ nav button.pedido{
     height:100%;
     z-index: 3;
     background: rgba(70, 70, 70, 0.8);
+    text-align: center;
     display:none;
     overflow:scroll;
 }
