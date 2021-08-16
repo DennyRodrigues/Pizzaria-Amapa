@@ -108,7 +108,6 @@ nav button.pedido{
     overflow:scroll;
 }
 #food_menu img{
-    position: absolute;
     width:70%;
     height:100%;
 }
