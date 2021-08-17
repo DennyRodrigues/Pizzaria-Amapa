@@ -5,13 +5,13 @@ body{
     background-color: #eeeeee;
     line-height:1.5;
 }
-.container{
-    width:95%;
-    margin: auto;
-}
+
 #space{
     padding-top:840px;
     box-sizing: border-box;
+}
+#space_2{
+    padding-top:150px;
 }
 a{
     text-decoration: none;
