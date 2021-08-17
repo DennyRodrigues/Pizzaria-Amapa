@@ -25,7 +25,7 @@ a:hover{
 }
 .text_box{
     margin: 0px 10px 20px 10px;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 10px 0px;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
     border-radius: 4%;
@@ -208,6 +208,12 @@ nav button.pedido{
     text-align:center;
 }
 /*Promoção*/
+#about_us p{
+    margin:auto;
+    width:60%;
+    text-align: justify;
+}
+/*About_Us*/
 /*text*/
 footer{
     background:black;
