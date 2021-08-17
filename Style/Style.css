@@ -10,7 +10,8 @@ body{
     margin: auto;
 }
 #space{
-    padding-top: 1000px;
+    padding-top:840px;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -19,6 +20,24 @@ a{
 a:hover{
     color:#dddddd;
 }
+.clr{
+    clear:both;
+}
+.text_box{
+    margin: 0px 10px 20px 10px;
+    padding: 0px 0px 0px 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-radius: 4%;
+}
+.text_box h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.text_box p{
+    font-size: 1.5em;
+}
+
 /*Global*/
 nav{
     width:100%;
@@ -174,16 +193,32 @@ nav button.pedido{
     left:0px;
 }
 /*Buttons*/
+#social_media{
+    text-align: center;
+}
+#social_media a{
+    color:black;
+    padding-right:10px;
+}
+#social_media a:hover{
+    color:#777777;
+}
+/*Social_media*/
+#promocao{
+    text-align:center;
+}
+/*Promoção*/
+/*text*/
 footer{
     background:black;
     color:white;
     padding:10px;
-    text-align: center;
     overflow:hidden;
 }
 footer ul{
     list-style: none;
     padding:none;
+
 }
 footer li{
     display:inline;
@@ -192,8 +227,14 @@ footer li{
 }
 #left_footer{
     float:left;
-    width:35%;
+    width:60%;
+    text-align: center;
 }
+#right_footer{
+    float:right;
+    width:40%;
+}
+
 
 /*Footer*/
 
@@ -222,6 +263,10 @@ footer li{
     }
     #left_footer{
         display:none;
+    }
+    #right_footer{
+        float:none;
+        width:100%;
 
     }
 }
