@@ -5,17 +5,39 @@ body{
     background-color: #eeeeee;
     line-height:1.5;
 }
-.container{
-    width:95%;
-    margin: auto;
-}
+
 #space{
-    padding-top: 1000px;
+    padding-top:840px;
+    box-sizing: border-box;
+}
+#space_2{
+    padding-top:150px;
 }
 a{
     text-decoration: none;
     color:white;
 }
+a:hover{
+    color:#dddddd;
+}
+.clr{
+    clear:both;
+}
+.text_box{
+    margin: 0px 10px 20px 10px;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-radius: 4%;
+}
+.text_box h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.text_box p{
+    font-size: 1.5em;
+}
+
 /*Global*/
 nav{
     width:100%;
@@ -92,9 +114,26 @@ nav button.pedido{
     position:absolute;
     right:5%;
     top: 25%;
-
     
 }
+/* Cardápio*/
+#food_menu{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 3;
+    background: rgba(70, 70, 70, 0.8);
+    text-align: center;
+    display:none;
+    overflow:scroll;
+}
+#food_menu img{
+    width:70%;
+    height:100%;
+}
+
 /*nav*/
 .slide{
     position: absolute;
@@ -141,11 +180,11 @@ nav button.pedido{
 #buttons button{
     position:absolute;
     top:0%;
-    font-size: 2em;
     background:white;
     width:100px;
     height:100%;
     opacity:5%;
+    overflow: hidden;
 }
 #buttons #next{
     right:0px;
@@ -153,13 +192,56 @@ nav button.pedido{
 #buttons #prev{
     left:0px;
 }
-/*Butons*/
+/*Buttons*/
+#social_media{
+    text-align: center;
+}
+#social_media a{
+    color:black;
+    padding-right:10px;
+}
+#social_media a:hover{
+    color:#777777;
+}
+/*Social_media*/
+#promocao{
+    text-align:center;
+}
+/*Promoção*/
+#about_us p{
+    margin:auto;
+    width:60%;
+    text-align: justify;
+}
+/*About_Us*/
+/*text*/
 footer{
     background:black;
     color:white;
     padding:10px;
-    
+    overflow:hidden;
 }
+footer ul{
+    list-style: none;
+    padding:none;
+
+}
+footer li{
+    display:inline;
+    padding-right:20px;
+    text-transform: uppercase; 
+}
+#left_footer{
+    float:left;
+    width:60%;
+    text-align: center;
+}
+#right_footer{
+    float:right;
+    width:40%;
+}
+
+
 /*Footer*/
 
 @media (max-width:720px){
@@ -167,9 +249,30 @@ footer{
         display:none;
     }
     nav h1{
-        font-size:1.3em;
+        font-size:1.4em;
     }
     #side_menu {
         width:100%;
+    }
+    header{
+        height:70%;
+    }
+    .slide{
+        transition: none;
+    }
+    .slide h1{
+        font-size: 1.5em;
+    }
+    #food_menu img{
+        width:100%;
+        height:150%;
+    }
+    #left_footer{
+        display:none;
+    }
+    #right_footer{
+        float:none;
+        width:100%;
+
     }
 }
