@@ -140,7 +140,7 @@ nav button.pedido{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height:800px;
     opacity:0;
     transition: all 2s ease-out;
 }
@@ -244,7 +244,7 @@ footer li{
 
 /*Footer*/
 
-@media (max-width:720px){
+@media (max-width:790px){
     nav button.pedido{
         display:none;
     }
@@ -255,10 +255,16 @@ footer li{
         width:100%;
     }
     header{
-        height:70%;
+        height:50%;
     }
     .slide{
         transition: none;
+    }
+    .slide, #buttons button{
+        max-height:500px;
+    }
+    #space{
+        padding-top:550px;
     }
     .slide h1{
         font-size: 1.5em;
